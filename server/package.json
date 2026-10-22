@@ -1,0 +1,30 @@
+{
+  "name": "shopsphere-server",
+  "version": "1.0.0",
+  "description": "ShopSphere REST API backend with Express and MongoDB",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node scripts/seed.js",
+    "seed:reset": "node scripts/resetSeed.js",
+    "admin:create": "node scripts/manageAdmin.js --create",
+    "admin:promote": "node scripts/manageAdmin.js --promote",
+    "test": "node tests/api.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
